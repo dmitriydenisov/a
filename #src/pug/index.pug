@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Портфолио - Дмитрий Денисов
+        //- стили
+        link(rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css")
+        link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet" href="fonts/noto-webfont/noto.css")
+        link(rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css")
+
+    body
+        header.header
+            .header__inner
+                nav.navigation
+                    //- button#navigation__botton.cmn-toggle-switch.cmn-toggle-switch__htx
+                    //-     span toggle menu
+                    
+                    ul.navigation__list
+                        li
+                            a(href="#resume") Резюме
+                        li
+                            a(href="#portfolio") Портфолио
+                        li
+                            a(href="#contacts") Контакты
+                .header__centered-content
+                    .user-photo.user-photo--shadow
+                        img(src="img/usercontent/photo-small.jpg" alt="Дмитрий Денисов")
+                    h1.header__title Дмитрий Денисов
+                a(href="#resume" class="mouse_scroll PageScroll2id")
+                    .mouse
+                        .wheel
+                    div
+                        span.m_scroll_arrows.unu
+                        span.m_scroll_arrows.doi
+                        span.m_scroll_arrows.trei
+        section#portfolio.portfolio
+            .container
+              .heading.heading--center Мои работы
+                .row
+                    .col-sm-4.portfolio__item
+                        a(href="#")
+                            img(src="img/usercontent/project_organica.jpg")
+                            .portfolio-item__title Сайт портфолио
+                            .portfolio-item__description Текущая верстка данного сайта
+        section#contacts.block-bg.contacts.section--padding--small.section--bg-cloud
+            .container
+                .row
+                    .col-sm-6
+                        .heading.heading--white Контакты
+                        .row
+                            .col-lg-6
+                                ul.defifnition-list
+                                    li.defifnition-list__item
+                                        .defifnition-list__def.defifnition-list__def--light.defifnition-list__def--bigger
+                                            |Email
+                                        .defifnition-list__desc
+                                            p
+                                                a(href="mailto:dmitriyd2009@yandex.ru") dmitriyd2009@yandex.ru
+                                        li.defifnition-list__item
+                                        .defifnition-list__def.defifnition-list__def--light.defifnition-list__def--bigger
+                                            |skype
+                                        .defifnition-list__desc
+                                            p
+                                                a(href="skype:dmitriy922806?chat") dmitriy922806
+                            .col-lg-6
+                                ul.defifnition-list
+                                    .defifnition-list__item
+                                        .defifnition-list__def.defifnition-list__def--lightdefifnition-list__def--bigger
+                                            |telegram
+                                        .defifnition-list__desc
+                                            p
+                                                a(target="_blank" href="https://t.me/denisov_da1993") denisov_da1993
+                                ul.defifnition-list
+                                    li.defifnition-list__item
+                                        .defifnition-list__def.defifnition-list__def--light.defifnition-list__def--bigger
+                                            |Социальные сети
+                                        .defifnition-list__desc
+                                            .social-icon
+                                            a(href="https://vk.com/dimanchik123" target="_blank" class="fa fa-vk" aria-hidden="true")
+                                            a(href="https://github.com/dmitriydenisov" target="_blank" class="fa fa-github" aria-hidden="true")
+                    .col-sm-6
+                        .heading.heading--medium.heading--padding-top.heading--white Связаться со мной
+
+                        form#contact-form.contact-form
+                            input(type="hidden" name="project_name" value="Мой персональный сайт")
+                            input(type="hidden" name="form_from" value="admin@f0250965.xsph.ru")
+                            input(type="hidden" name="admin_email" value="dmitriyd2009@yandex.ru")
+                            input(type="hidden" name="form_subject" value="Обратная связь")
+
+                            input(type="text" class="contact-form__input" name="name" placeholder="Имя")
+                            input(type="text" class="contact-form__input" name="email" placeholder="Email")
+
+                        .clearfix
+                            input(type="text" class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype")
+                            input(type="text" class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон")
+                        .contact-form__bg-pencill
+                            textarea.contact-form__textarea(placeholder="Ваше сообщение" name="message")
+                        input(type="submit" class="contact-form__submit" name="" value="Отправить")
+                        #answer
+        .copyright
+            .container
+                p.copyright__label © 2020 Денисов Дмитрий
+                p Веб-разработик из Саратов, занимаюсь версткой и созданием сайтов.
+    //- script(src="js/main.js")

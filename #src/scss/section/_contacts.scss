@@ -1,0 +1,25 @@
+.contacts{
+	background-color: #065a97;
+	color: #FFF;
+	
+	p{
+		color: #FFF;
+	}
+
+	a{
+		color: #FFF;
+		text-decoration: none;
+		border-bottom: 1px dotted #fff;
+		transition: all 0.3s ease-in;
+		
+		&:hover{
+			color: #000;
+			text-decoration: none;
+			border-bottom: 1px dotted #fcca45;
+		}
+	}
+}
+.contacts_description{
+	margin: 0;
+	margin-bottom: 30px;
+}
