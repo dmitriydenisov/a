@@ -6,35 +6,49 @@ html(lang="en")
         title Портфолио - Дмитрий Денисов
         //- стили
         link(rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css")
-        link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet" href="css/main.min.css")
         link(rel="stylesheet" href="fonts/noto-webfont/noto.css")
         link(rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css")
 
     body
-        header.header
-            .header__inner
-                nav.navigation
-                    //- button#navigation__botton.cmn-toggle-switch.cmn-toggle-switch__htx
-                    //-     span toggle menu
+        header.header 
+            .container
+                .header__inner
+                    nav.menu
+                        ul.menu-list
+                            li.menu-list__item
+                                a.menu-list__link(href="#")  Резюме
+                            li.menu-list__item
+                                a.menu-list__link(href="#")  портфолио
+                            li.menu-list__item
+                                a.menu-list__link(href="#")  контакты
+                    .photo
+                        img(src="img/usercontent/photo-small.jpg", alt="")
+                    .title Дмитрий Денисов
+                    .scroll
+            //- .header__inner
+            //-     nav.navigation
+            //-         //- button#navigation__botton.cmn-toggle-switch.cmn-toggle-switch__htx
+            //-         //-     span toggle menu
                     
-                    ul.navigation__list
-                        li
-                            a(href="#resume") Резюме
-                        li
-                            a(href="#portfolio") Портфолио
-                        li
-                            a(href="#contacts") Контакты
-                .header__centered-content
-                    .user-photo.user-photo--shadow
-                        img(src="img/usercontent/photo-small.jpg" alt="Дмитрий Денисов")
-                    h1.header__title Дмитрий Денисов
-                a(href="#resume" class="mouse_scroll PageScroll2id")
-                    .mouse
-                        .wheel
-                    div
-                        span.m_scroll_arrows.unu
-                        span.m_scroll_arrows.doi
-                        span.m_scroll_arrows.trei
+            //-         ul.navigation__list
+            //-             li
+            //-                 a(href="#resume") Резюме
+            //-             li
+            //-                 a(href="#portfolio") Портфолио
+            //-             li
+            //-                 a(href="#contacts") Контакты
+            //-     .header__centered-content
+            //-         .user-photo.user-photo--shadow
+            //-             img(src="img/usercontent/photo-small.jpg" alt="Дмитрий Денисов")
+            //-         h1.header__title Дмитрий Денисов
+            //-     a(href="#resume" class="mouse_scroll PageScroll2id")
+            //-         .mouse
+            //-             .wheel
+            //-         div
+            //-             span.m_scroll_arrows.unu
+            //-             span.m_scroll_arrows.doi
+            //-             span.m_scroll_arrows.trei
         section#portfolio.portfolio
             .container
               .heading.heading--center Мои работы

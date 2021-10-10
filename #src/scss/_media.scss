@@ -8,7 +8,7 @@
     .header__centered-content{
 		margin-top: 0;
     }
-    .header__title{
+    .title{
         font-size: 42px;
     }
     .header__subtitle{
@@ -106,65 +106,11 @@
     .header__centered-content{
         margin-top: -162px;
     }
-    .header__title{
+    .title{
         font-size: 56px;
     }
-    .header__subtitle{
-        font-size: 26px;
-    }
-    .filter-block__element {
-        margin-right: 15px;
-            
-        &:last-child{
-            margin-right: 0;
-        }		
-    }
-    .portfolio-item__img {
-        margin-bottom: 16px;
-        height: 250px;
-    }
-    .portfolio-item__img__hover{
-        .fa{
-            font-size: 64px;
-			position: static;
-            transform: translate(0%, 0%);
-        } 
-        span{
-			display: inline-block;
-	    }
-    }
-    section{
-        padding-top: 74px;
-        padding-bottom: 90px;
-    }
-    .section--padding--small{
-        padding-top: 65px;
-        padding-bottom: 67px;
-    }	
-    .social-icon{
-        .fa{
-            margin-bottom: 0;
-        }
-    }
-    .user-photo--big{
-        width: 205px;
-        height: 205px;
-    }
+    
 }
 @media(min-width:1500px){
-    .section--bg-laptop{
-        background-image: url(../img/bg/laptop.png);
-        background-repeat: no-repeat;
-        background-position: right 70%;
-    }
-    .section--bg-gear{	
-        background-image: url(../img/bg/gear.png);
-        background-repeat: no-repeat;
-        background-position: left 55%;
-    }
-    .section--bg-cloud{	
-        background-image: url(../img/bg/cloud.png);
-        background-repeat: no-repeat;
-        background-position: right 70%;
-    }
+    
 }
