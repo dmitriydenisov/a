@@ -1,0 +1,33 @@
+.portfolio{
+    padding: 50px 0;
+    background-color: #fcca45;
+    &__item{
+        margin-bottom: 25px;
+    }
+
+}
+.item{
+    &__link{
+        display: inline-block;
+        &:hover{
+            color: #000;
+            .item__img{
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            }
+            .item__title{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__img{
+        margin-bottom: 20px;
+    }
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 30px;
+    }
+    &__description{}
+}

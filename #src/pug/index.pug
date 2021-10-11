@@ -24,40 +24,43 @@ html(lang="en")
                                 a.menu-list__link(href="#")  контакты
                     .photo
                         img(src="img/usercontent/photo-small.jpg", alt="")
-                    .title Дмитрий Денисов
+                    .header__title Дмитрий Денисов
                     .scroll
-            //- .header__inner
-            //-     nav.navigation
-            //-         //- button#navigation__botton.cmn-toggle-switch.cmn-toggle-switch__htx
-            //-         //-     span toggle menu
-                    
-            //-         ul.navigation__list
-            //-             li
-            //-                 a(href="#resume") Резюме
-            //-             li
-            //-                 a(href="#portfolio") Портфолио
-            //-             li
-            //-                 a(href="#contacts") Контакты
-            //-     .header__centered-content
-            //-         .user-photo.user-photo--shadow
-            //-             img(src="img/usercontent/photo-small.jpg" alt="Дмитрий Денисов")
-            //-         h1.header__title Дмитрий Денисов
-            //-     a(href="#resume" class="mouse_scroll PageScroll2id")
-            //-         .mouse
-            //-             .wheel
-            //-         div
-            //-             span.m_scroll_arrows.unu
-            //-             span.m_scroll_arrows.doi
-            //-             span.m_scroll_arrows.trei
-        section#portfolio.portfolio
+                        a(href="#resume" class="mouse_scroll PageScroll2id")
+                            .mouse
+                                .wheel
+                            div
+                                span.m_scroll_arrows.unu
+                                span.m_scroll_arrows.doi
+                                span.m_scroll_arrows.trei
+        section.portfolio
             .container
-              .heading.heading--center Мои работы
+                .title Мои работы
                 .row
                     .col-sm-4.portfolio__item
-                        a(href="#")
-                            img(src="img/usercontent/project_organica.jpg")
-                            .portfolio-item__title Сайт портфолио
-                            .portfolio-item__description Текущая верстка данного сайта
+                        a.item__link(href="#" target="_blank")
+                            img.item__img(src="img/usercontent/portfolio.jpg")
+                            p.item__title Сайт портфолио
+                    .col-sm-4.portfolio__item
+                        a.item__link(href="https://dmitriydenisov.github.io/gosurf/" target="_blank")
+                            img.item__img(src="img/usercontent/gosurf.jpg")
+                            p.item__title Лэндинг Go surf
+                    .col-sm-4.portfolio__item
+                        a.item__link(href="https://dmitriydenisov.github.io/shop-gidro/" target="_blank")
+                            img.item__img(src="img/usercontent/shop-gidro.jpg")
+                            p.item__title интернет-магазин Drive moto
+                    .col-sm-4.portfolio__item
+                        a.item__link(href="https://dmitriydenisov.github.io/mavic/" target="_blank")
+                            img.item__img(src="img/usercontent/mavic.jpg")
+                            p.item__title полноэкранный сайт квадрокоптера                    
+                    .col-sm-4.portfolio__item
+                        a.item__link(href="https://dmitriydenisov.github.io/desire/" target="_blank")
+                            img.item__img(src="img/usercontent/desire.jpg")
+                            p.item__title Многостраницный сайт дизайнерской мебели
+                    .col-sm-4.portfolio__item
+                        a.item__link(href="https://dmitriydenisov.github.io/tata/" target="_blank")
+                            img.item__img(src="img/usercontent/teta.jpg")
+                            p.item__title Лэндинг Тета Хилинг
         section#contacts.block-bg.contacts.section--padding--small.section--bg-cloud
             .container
                 .row

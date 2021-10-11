@@ -7,61 +7,9 @@ body{
     overflow-x: hidden;
     min-width: 320px
 }
-
-.container{
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-//   section{
-//       margin-bottom: 80px;
-//   }
-.price{
-    font-family: 'Barlow', sans-serif;
-    position: relative;
-}
 .title{
-    font-family: 'Barlow', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-}
-.catalog__filter-itemsinnner{
-    overflow-x: auto;
-}
-.breadcrumbs{
-    margin-bottom: 40px;
-    &__inner{
-        overflow-x: auto;
-    }
-    &__list{
-        display: flex;
-    }
-    &__list-item{
-        padding-right: 16px;
-        margin-right: 10px;
-        position: relative;
-        font-size: 15px;
-        line-height: 18px;
-        color: #C4C4C4;
-        &:after{
-            content: '';
-            position: absolute;
-            width: 6px;
-            height: 10px;
-            right: 0;
-            bottom: 4px;
-            background-image: url('../img/link-arrow.svg');
-        }
-    &:last-child::after{
-        display: none;
-    }
-     }
-}
-.swiper{
-    margin-left: inherit;
-    margin-right: inherit;
-}
-.tab-container{
-    margin-top: 15px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
 }
