@@ -5,7 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Портфолио - Дмитрий Денисов
         //- стили
-        link(rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css")
+        link(rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css")
         link(rel="stylesheet" href="css/main.min.css")
         link(rel="stylesheet" href="fonts/noto-webfont/noto.css")
         link(rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css")
@@ -15,25 +15,27 @@ html(lang="en")
             .container
                 .header__inner
                     nav.menu
+                        button.menu__btn
+                            span.menu__btn-line
                         ul.menu-list
+                            //- li.menu-list__item
+                            //-     a.menu-list__link(href="#")  Резюме
                             li.menu-list__item
-                                a.menu-list__link(href="#")  Резюме
+                                a.menu-list__link(href="#portfolio")  портфолио
                             li.menu-list__item
-                                a.menu-list__link(href="#")  портфолио
-                            li.menu-list__item
-                                a.menu-list__link(href="#")  контакты
+                                a.menu-list__link(href="#contacts")  контакты
                     .photo
                         img(src="img/usercontent/photo-small.jpg", alt="")
                     .header__title Дмитрий Денисов
                     .scroll
-                        a(href="#resume" class="mouse_scroll PageScroll2id")
+                        a(href="#portfolio" class="mouse_scroll PageScroll2id")
                             .mouse
                                 .wheel
                             div
                                 span.m_scroll_arrows.unu
                                 span.m_scroll_arrows.doi
                                 span.m_scroll_arrows.trei
-        section.portfolio
+        section.portfolio#portfolio
             .container
                 .title Мои работы
                 .row
@@ -61,7 +63,7 @@ html(lang="en")
                         a.item__link(href="https://dmitriydenisov.github.io/tata/" target="_blank")
                             img.item__img(src="img/usercontent/teta.jpg")
                             p.item__title Лэндинг Тета Хилинг
-        section.contacts
+        section.contacts#contacts
             .container
                 .row
                     .col-sm-6
@@ -116,4 +118,4 @@ html(lang="en")
                 .copyright__inner
                     span.copyright__label © 2021 Денисов Дмитрий
                     span Веб-разработик из Саратов, занимаюсь версткой и созданием сайтов.
-    //- script(src="js/main.js")
+    script(src="js/main.js")
