@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио - Дмитрий Денисов</title>
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="fonts/noto-webfont/noto.css" />
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#portfolio"> портфолио</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#contacts"> контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="photo">
+          <img src="img/usercontent/photo-small.jpg" alt="" />
+        </div>
+        <div class="header__title">Дмитрий Денисов</div>
+        <div class="scroll">
+          <a class="mouse_scroll PageScroll2id" href="#portfolio">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div>
+              <span class="m_scroll_arrows unu"></span>
+              <span class="m_scroll_arrows doi"></span>
+              <span class="m_scroll_arrows trei"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="title">Мои работы</div>
+      <div class="row">
+        <div class="col-sm-4 portfolio__item">
+          <a class="item__link" href="#" target="_blank">
+            <img class="item__img" src="img/usercontent/portfolio.jpg" />
+            <p class="item__title">Сайт портфолио</p>
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio__item">
+          <a class="item__link" href="https://dmitriydenisov.github.io/gosurf/" target="_blank">
+            <img class="item__img" src="img/usercontent/gosurf.jpg" />
+            <p class="item__title">Лэндинг Go surf</p>
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio__item">
+          <a class="item__link" href="https://dmitriydenisov.github.io/shop-gidro/" target="_blank">
+            <img class="item__img" src="img/usercontent/shop-gidro.jpg" />
+            <p class="item__title">интернет-магазин Drive moto</p>
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio__item">
+          <a class="item__link" href="https://dmitriydenisov.github.io/mavic/" target="_blank">
+            <img class="item__img" src="img/usercontent/mavic.jpg" />
+            <p class="item__title">полноэкранный сайт квадрокоптера </p>
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio__item">
+          <a class="item__link" href="https://dmitriydenisov.github.io/desire/" target="_blank">
+            <img class="item__img" src="img/usercontent/desire.jpg" />
+            <p class="item__title">Многостраницный сайт дизайнерской мебели</p>
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio__item">
+          <a class="item__link" href="https://dmitriydenisov.github.io/tata/" target="_blank">
+            <img class="item__img" src="img/usercontent/teta.jpg" />
+            <p class="item__title">Лэндинг Тета Хилинг</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="title">Контакты</div>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <div class="contacts-list__heading">Email</div>
+                  <div class="contacts-list__description">
+                    <a class="contacts-list__link" href="mailto:dmitriyd2009@yandex.ru">dmitriyd2009@yandex.ru</a>
+                  </div>
+                </li>
+                <li class="contacts-list__item">
+                  <div class="contacts-list__heading">skype</div>
+                  <div class="contacts-list__desc">
+                    <a class="contacts-list__link" href="skype:dmitriy922806?chat">dmitriy922806</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="contacts-list">
+                <div class="contacts-list__item">
+                  <div class="contacts-list__heading">telegram</div>
+                  <div class="contacts-list__desc">
+                    <a class="contacts-list__link" target="_blank" href="https://t.me/denisov_da1993">denisov_da1993</a>
+                  </div>
+                </div>
+              </ul>
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <div class="contacts-list__heading">Социальные сети</div>
+                  <div class="contacts-list__desc">
+                    <a class="contacts-list__link fa fa-vk" href="https://vk.com/dimanchik123" target="_blank"></a>
+                    <a class="contacts-list__link fa fa-github" href="https://github.com/dmitriydenisov" target="_blank"></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="title">Связаться со мной</div>
+          <form class="contact-form" id="contact-form">
+            <input type="hidden" name="project_name" value="Мой персональный сайт" />
+            <input type="hidden" name="form_from" value="admin@f0250965.xsph.ru" />
+            <input type="hidden" name="admin_email" value="dmitriyd2009@yandex.ru" />
+            <input type="hidden" name="form_subject" value="Обратная связь" />
+            <input class="contact-form__input" type="text" name="name" placeholder="Имя" />
+            <input class="contact-form__input" type="text" name="email" placeholder="Email" />
+          </form>
+          <div class="clearfix">
+            <input class="contact-form__input contact-form__input--half-width" type="text" name="skype" placeholder="Skype" />
+            <input class="contact-form__input contact-form__input--half-width" type="text" name="phone" placeholder="Телефон" />
+          </div>
+          <div class="contact-form__bg-pencill">
+            <textarea class="contact-form__textarea" placeholder="Ваше сообщение" name="message"></textarea>
+          </div>
+          <input class="contact-form__submit" type="submit" name="" value="Отправить" />
+          <div id="answer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="copyright">
+    <div class="container">
+      <div class="copyright__inner">
+        <span class="copyright__label">© 2021 Денисов Дмитрий</span>
+        <span>Веб-разработик из Саратов, занимаюсь версткой и созданием сайтов.</span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
