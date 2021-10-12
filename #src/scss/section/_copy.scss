@@ -1,19 +1,20 @@
 .copyright{
-	background-color: #003F6D;
+	background-color: #fcca45;
 	font-size: 14px;	
 	line-height: 1.4;
 	padding-top: 40px;
-	padding-bottom: 40px;
-	color: #5e92b9;	
+	color: #292929;	
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
 	
-	p{
-		color: #5e92b9;
+	span{
 		font-size: 14px;	
 		line-height: 1.4;
 		margin: 0 0 10px;
 	}
-	p.copyright__label{
-		color: #82b3d7;
+	.copyright__label{
 		font-size: 16px;
 	}
 	p:last-child{

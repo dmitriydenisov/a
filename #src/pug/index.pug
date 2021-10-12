@@ -61,45 +61,40 @@ html(lang="en")
                         a.item__link(href="https://dmitriydenisov.github.io/tata/" target="_blank")
                             img.item__img(src="img/usercontent/teta.jpg")
                             p.item__title Лэндинг Тета Хилинг
-        section#contacts.block-bg.contacts.section--padding--small.section--bg-cloud
+        section.contacts
             .container
                 .row
                     .col-sm-6
-                        .heading.heading--white Контакты
+                        .title Контакты
                         .row
                             .col-lg-6
-                                ul.defifnition-list
-                                    li.defifnition-list__item
-                                        .defifnition-list__def.defifnition-list__def--light.defifnition-list__def--bigger
+                                ul.contacts-list
+                                    li.contacts-list__item
+                                        .contacts-list__heading
                                             |Email
-                                        .defifnition-list__desc
-                                            p
-                                                a(href="mailto:dmitriyd2009@yandex.ru") dmitriyd2009@yandex.ru
-                                        li.defifnition-list__item
-                                        .defifnition-list__def.defifnition-list__def--light.defifnition-list__def--bigger
+                                        .contacts-list__description
+                                            a.contacts-list__link(href="mailto:dmitriyd2009@yandex.ru") dmitriyd2009@yandex.ru
+                                    li.contacts-list__item
+                                        .contacts-list__heading
                                             |skype
-                                        .defifnition-list__desc
-                                            p
-                                                a(href="skype:dmitriy922806?chat") dmitriy922806
+                                        .contacts-list__desc
+                                            a.contacts-list__link(href="skype:dmitriy922806?chat") dmitriy922806
                             .col-lg-6
-                                ul.defifnition-list
-                                    .defifnition-list__item
-                                        .defifnition-list__def.defifnition-list__def--lightdefifnition-list__def--bigger
+                                ul.contacts-list
+                                    .contacts-list__item
+                                        .contacts-list__heading
                                             |telegram
-                                        .defifnition-list__desc
-                                            p
-                                                a(target="_blank" href="https://t.me/denisov_da1993") denisov_da1993
-                                ul.defifnition-list
-                                    li.defifnition-list__item
-                                        .defifnition-list__def.defifnition-list__def--light.defifnition-list__def--bigger
+                                        .contacts-list__desc
+                                            a.contacts-list__link(target="_blank" href="https://t.me/denisov_da1993") denisov_da1993
+                                ul.contacts-list
+                                    li.contacts-list__item
+                                        .contacts-list__heading
                                             |Социальные сети
-                                        .defifnition-list__desc
-                                            .social-icon
-                                            a(href="https://vk.com/dimanchik123" target="_blank" class="fa fa-vk" aria-hidden="true")
-                                            a(href="https://github.com/dmitriydenisov" target="_blank" class="fa fa-github" aria-hidden="true")
+                                        .contacts-list__desc
+                                            a.contacts-list__link.fa.fa-vk(href="https://vk.com/dimanchik123" target="_blank" )
+                                            a.contacts-list__link.fa.fa-github(href="https://github.com/dmitriydenisov" target="_blank")
                     .col-sm-6
-                        .heading.heading--medium.heading--padding-top.heading--white Связаться со мной
-
+                        .title Связаться со мной
                         form#contact-form.contact-form
                             input(type="hidden" name="project_name" value="Мой персональный сайт")
                             input(type="hidden" name="form_from" value="admin@f0250965.xsph.ru")
@@ -118,6 +113,7 @@ html(lang="en")
                         #answer
         .copyright
             .container
-                p.copyright__label © 2020 Денисов Дмитрий
-                p Веб-разработик из Саратов, занимаюсь версткой и созданием сайтов.
+                .copyright__inner
+                    span.copyright__label © 2021 Денисов Дмитрий
+                    span Веб-разработик из Саратов, занимаюсь версткой и созданием сайтов.
     //- script(src="js/main.js")
